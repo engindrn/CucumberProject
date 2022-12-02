@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.109">
+    <testcase classname="US007 Hastalar randevu tarihi oluşturabilmelidir" name="Kullanıcı geçerli tarih girmelidir. (gecmis tarihleri secememelidir)" time="21.553">
+        <failure message="The following asserts failed:&#10;&#9;expected [Appointment date can not be past date!] but found [Appointment registration saved!]" type="java.lang.AssertionError">
+            <![CDATA[Given USyedi Hasta Medunna adresine gider...................................passed
+When USyedi Hasta Sing in simgesine tiklar..................................passed
+Then USyedi Hasta Sing in e tiklar..........................................passed
+And USyedi Hasta Username girer.............................................passed
+And USyedi Hasta Password girer.............................................passed
+And USyedi Hasta Sing in butonuna tiklar....................................passed
+And USyedi Hasta My Pages(PATIENT) e tiklar.................................passed
+And USyedi Hasta Make an Appointment e tiklar...............................passed
+And USyedi Hasta Phone numarasini girer.....................................passed
+Given USyedi Hasta Appointment DateTime e gecmis bir tarih girer............passed
+Then USyedi Hasta Send an Appointment Request e tiklar......................passed
+And US06 Kullanici 1 saniye bekler..........................................passed
+Given USyedi Gecmis tarihle randevu talebinin olusturalamadigi dogrulanir...failed
+And USyedi Sayfayi kapatir..................................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Appointment date can not be past date!] but found [Appointment registration saved!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepDefinitions.uiSteps.MedunnaUS07StepDefinitions.usyediGecmisTarihleRandevuTalebininOlusturalamadigiDogrulanir(MedunnaUS07StepDefinitions.java:172)
+	at ✽.USyedi Gecmis tarihle randevu talebinin olusturalamadigi dogrulanir(file:///C:/Users/ENGİN/IdeaProjects/CucumberProje/src/test/resources/features/UI/MedunnaUS007.feature:55)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
