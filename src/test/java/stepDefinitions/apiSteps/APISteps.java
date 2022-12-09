@@ -1,6 +1,6 @@
 package stepDefinitions.apiSteps;
 
-import baseUrl.api.MedunnaBaseURL;
+import baseUrl.api.MedunnaBaseUrl;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
@@ -8,8 +8,9 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
+import static utilities.Authentication.generateToken;
 
-public class APISteps extends MedunnaBaseURL {
+public class APISteps extends MedunnaBaseUrl {
 
     Response response;
 

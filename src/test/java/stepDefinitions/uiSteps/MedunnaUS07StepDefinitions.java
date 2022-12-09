@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
-import pages.MedunnaPage;
+import pages.MedunnaUS06_07Page;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 public class MedunnaUS07StepDefinitions {
-    MedunnaPage medunnaPage = new MedunnaPage();
+    MedunnaUS06_07Page medunnaPage = new MedunnaUS06_07Page();
     Faker faker = new Faker();
     Actions actions=new Actions(Driver.getDriver());
     SoftAssert softAssert = new SoftAssert();

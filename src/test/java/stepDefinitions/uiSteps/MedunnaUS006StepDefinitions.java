@@ -6,7 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
-import pages.MedunnaPage;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.MedunnaUS06_07Page;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -14,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MedunnaUS006StepDefinitions {
 
-    MedunnaPage medunnaPage = new MedunnaPage();
+    MedunnaUS06_07Page medunnaPage = new MedunnaUS06_07Page();
     Actions actions=new Actions(Driver.getDriver());
 
     @Given("US06 Kullanici Medunna adresine gider")
@@ -193,3 +194,8 @@ public class MedunnaUS006StepDefinitions {
         // WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         // wait.until(ExpectedConditions.visibilityOf(page.update));
         //  Assert.assertTrue(page.update.isDisplayed());
+
+
+       //  WebDriverWait wait=new WebDriverWait(Driver.getDriver(),15);
+       //   wait.until(ExpectedConditions.visibilityOf(medunnaPage.popUpMessage));
+       //        Assert.assertTrue(medunnaPage.popUpMessage.isDisplayed());
