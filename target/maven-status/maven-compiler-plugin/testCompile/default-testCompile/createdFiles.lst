@@ -1,6 +1,9 @@
+pages\US01RegisterPage.class
 stepDefinitions\uiSteps\MedunnaUS07StepDefinitions.class
 utilities\ApiUtils.class
 stepDefinitions\uiSteps\US026StepDef.class
+stepDefinitions\dbSteps\US01DBStepdefinition.class
+stepDefinitions\uiSteps\US01KayitStepDefinition.class
 Pojos\Physician.class
 Pojos\User.class
 Pojos\Registrant.class
@@ -13,7 +16,6 @@ Pojos\Messages.class
 pages\US026Page.class
 Pojos\Appointment.class
 utilities\WriteToTxt.class
-stepDefinitions\apiSteps\RoomOlusturmaSteps.class
 Pojos\State.class
 utilities\ReusableMethods$1.class
 Pojos\Country.class
@@ -24,7 +26,6 @@ stepDefinitions\uiSteps\MedunnaUS006StepDefinitions.class
 utilities\ReusableMethods.class
 utilities\Authentication2.class
 pages\MedunnaUS06_07Page.class
-Pojos\RoomPostBtch81.class
 utilities\Authentication.class
 stepDefinitions\dbSteps\IbrahimHocaSteps.class
 stepDefinitions\dbSteps\MedunnaDataBaseSteps.class

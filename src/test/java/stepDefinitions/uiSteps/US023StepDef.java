@@ -90,8 +90,6 @@ public class US023StepDef {
     public void usyirmiucStatusUCompletedOlarakDegistiginiDogrular() {
         Assert.assertEquals("COMPLETED",select.getFirstSelectedOption().getText());
 
-
-      //  medunna.dogrulamaMesaji.isDisplayed();
     }
 
     @And("USyirmiuc sayfayi kapatir")

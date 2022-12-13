@@ -133,10 +133,7 @@ public class US026StepDef {
     @And("USyirmiAlti Sistem mesaj gonderilme isleminin basariyla tamamlandigina dair bilgi mesaji verir")
     public void usyirmialtiSistemMesajGonderilmeIslemininBasariylaTamamlandiginaDairBilgiMesajiVerir() throws InterruptedException {
         String expectedMessage="Your message has been received";
-
         String actualMessage= medunna.popUpMessage.getText();
-
-
         Assert.assertEquals(actualMessage,expectedMessage);
 
 

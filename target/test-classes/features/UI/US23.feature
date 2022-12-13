@@ -1,6 +1,7 @@
 @US023
   Feature: Fatura Ödemesi (Staff)
 
+ @US023-1
  Scenario: Hastanin fatura olusturabilmesi icin durumu Doktor tarafindan tamamlandi (Completed) olmasi gerekir
 
          Given USyirmiuc Doktor Medunna adresine gider
@@ -19,7 +20,7 @@
          And USyirmiuc Status u Completed olarak degistigini dogrular
          And USyirmiuc sayfayi kapatir
 
-
+@US023-2
 Scenario: Personelin fatura olusturabilmesi icin statusunun personel tarafindan Cancelled olarak ayarlanmasi gerekir
 
                Given USyirmiuc Personel Medunna adresine gider
@@ -41,6 +42,7 @@ Scenario: Personelin fatura olusturabilmesi icin statusunun personel tarafindan 
               And USyirmiuc Statusu Cancelled olan hastada Payment Invoice Process  olmadigini dogrula
               And USyirmiuc sayfayi kapatir
 
+ @US023-3
   Scenario: Kullanıcı (Personel) Fatura Ödeme işlemine gidebilir/Kullanıcı daha sonra hastaya gönderilen faturayı görebilir
 
                  Given USyirmiuc Personel Medunna adresine gider
@@ -59,6 +61,7 @@ Scenario: Personelin fatura olusturabilmesi icin statusunun personel tarafindan 
                 And USyirmiuc Personel hastaya gondereilen faturayi gorur
                 And USyirmiuc sayfayi kapatir
 
+    @US023-4
     Scenario: Personel hasta icin yeni bir fatura olusturabilir
 
                  Given USyirmiuc Personel Medunna adresine gider
