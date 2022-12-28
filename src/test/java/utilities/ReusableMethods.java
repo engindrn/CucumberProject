@@ -396,16 +396,21 @@ public class ReusableMethods {
         return tarih;
     }
 
-    public static <DataTimeFormatter> String sayfaKucult() throws AWTException {
-        Robot robot = new Robot();
-        for (int i = 0; i < 1; i++) {
-            robot.keyPress(KeyEvent.VK_CONTROL); //CTRL ye tiklandi
-            robot.keyPress(KeyEvent.VK_SUBTRACT); // - ye tiklandi
-            robot.keyRelease(KeyEvent.VK_SUBTRACT); // CTRL yi birakti
-            robot.keyRelease(KeyEvent.VK_CONTROL); //- yi birakti
-            // CTRL (-) ye basılarak ekran belirlenen miktarda küçültülmüş oldu.
-        }
-        return sayfaKucult();
+  //public static <DataTimeFormatter> String sayfaKucult() throws AWTException {
+  //    Robot robot = new Robot();
+  //    for (int i = 0; i < 1; i++) {
+  //        robot.keyPress(KeyEvent.VK_CONTROL); //CTRL ye tiklandi
+  //        robot.keyPress(KeyEvent.VK_SUBTRACT); // - ye tiklandi
+  //        robot.keyRelease(KeyEvent.VK_SUBTRACT); // CTRL yi birakti
+  //        robot.keyRelease(KeyEvent.VK_CONTROL); //- yi birakti
+  //        // CTRL (-) ye basılarak ekran belirlenen miktarda küçültülmüş oldu.
+  //    }
+  //}
+
+    public static void zoomInOut(int zoom) {
+
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("document.body.style.zoom='" + zoom + "%'");
     }
 
 }

@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.Select;
 import pages.US023Page;
 import utilities.ConfigReader;
@@ -146,7 +147,21 @@ public class US023StepDef {
     public void usyirmiucPersonelShowAppointmentsKutucugunuTiklar() throws AWTException {
        // ReusableMethods.sayfaKucult();
         ReusableMethods.waitFor(2);
+        ReusableMethods.zoomInOut(10);
         medunna.showappointments.click();
+
+ //    /* sayfada  zoom out yapma*/
+ //      JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+ //      js.executeScript("document.body.style.zoom='50%';");
+
+ //     // zoom in
+ //      js.executeScript("document.body.style.zoom='300%';");
+
+ //    // default zoom
+ //      js.executeScript("document.body.style.zoom='100%';");
+
+
+
 
     }
 
@@ -201,6 +216,7 @@ public class US023StepDef {
     @And("USyirmiuc Statusu Completed olan hastada icin Creat Invoice butonu olmadigini dogrular")
     public void usyirmiucStatusuCompletedOlanHastadaIcinCreatInvoiceButonuOlmadiginiDogrular() {
         Assert.assertFalse(medunna.paymentbutondogrulama.contains("Creat Invoice"));
+
     }
 
     @And("USyirmiuc Kullanici {int} saniye bekler")
