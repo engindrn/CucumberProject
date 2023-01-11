@@ -142,6 +142,14 @@ public class MedunnaUS07StepDefinitions {
        //         .sendKeys(""+date.getMonthValue()+"")
        //         .sendKeys("2022")
        //         .perform();
+
+        // @Then("Kullanici tarih ve saat girer.")
+        // public void kullanici_tarih_ve_saat_girer() {
+        //     LocalDateTime tarihSaat = LocalDateTime.now();
+        //     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.YYYY");
+        //     DateTimeFormatter formatterSaat = DateTimeFormatter.ofPattern("hh:mm a");
+        //     adminPage.tarihSaatButonu.sendKeys(formatter.format(tarihSaat), formatterSaat.format(tarihSaat));
+        //     //tarih saat
     }
 
     @Given("USyedi Gelecekteki tarihle randevu talebinin kaydedildigi dogrulanir")

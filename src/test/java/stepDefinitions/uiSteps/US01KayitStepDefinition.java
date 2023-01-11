@@ -32,7 +32,7 @@ public class US01KayitStepDefinition {
     public void ce_kullanici_first_name_ve_last_name_girer() {
         String firstName = faker.name().firstName();
         String lastName = faker.name().lastName();
-        registrant.setFirstName(firstName);
+        registrant.setFirstName(firstName);                   //pojo classa set ettık
         registrant.setLastName(lastName);
 
         page.firstName.sendKeys(firstName);
