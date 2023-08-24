@@ -6,6 +6,7 @@ stepDefinitions\dbSteps\US01DBStepdefinition.class
 stepDefinitions\uiSteps\US01KayitStepDefinition.class
 Pojos\Physician.class
 Pojos\User.class
+stepDefinitions\uiSteps\headless.class
 Pojos\Registrant.class
 pages\US023Page.class
 baseUrl\api\MedunnaBaseUrl.class

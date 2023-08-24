@@ -42,6 +42,9 @@ select * from public.patient where first_name='Arda';
 select * from public.jhi_user]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseEditorStateManager">
+    <last-used-providers />
+  </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>

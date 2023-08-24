@@ -1,6 +1,5 @@
 package utilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -33,19 +32,26 @@ public class Driver {
                 //bulunan browser key ine value olr case i ekleriz.
                 //ConfigReader bize configuration.properties file indan key i
                 //browser olan value yu getir dedik.
+                case "chrome":
+                    //  WebDriverManager.edgedriver().setup();  seleniumu 4.11 yaptik buna gerek kalmadi
+                    driver=new ChromeDriver();
+                    break;
                 case "edge":
-                    WebDriverManager.edgedriver().setup();
                     driver=new EdgeDriver();
                     break;
                 case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
                     driver=new FirefoxDriver();
                     break;
                 case "safari" :
-                    WebDriverManager.safaridriver().setup();
                     driver=new SafariDriver();
+                    break;
+                case "headless-chrome":
+                    ChromeOptions chromeOptions= new ChromeOptions();
+                    chromeOptions.addArguments("--headless=new");
+                    driver=new ChromeDriver(chromeOptions);
+                    break;
                 default:
-                    WebDriverManager.chromedriver().setup();   //hiçbiri seçili değilse choreme çalışır
+                    //hiçbiri seçili değilse choreme çalışır
                     driver = new ChromeDriver();
             }
 
